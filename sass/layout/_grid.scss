@@ -6,9 +6,14 @@
         margin-bottom: $gutter-vertical;
     }
     
-    @include clearfix;
+    &:first-child  {
+        margin-top: $gutter-vertical;
+    } 
 
+    @include clearfix;
+    
     [class^="col-"] {
+        height: 5rem;
         float: left;
 
         &:not(:last-child) {
